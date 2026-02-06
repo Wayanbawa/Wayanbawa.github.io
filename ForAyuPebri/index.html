@@ -143,7 +143,7 @@
       }
 
       async function kirimPesan() {
-        var { value: pesan } = await swalo.fire({ title: "Tulis pesan", input: "textarea", confirmButtonText: "Kirim" });
+        var { value: pesan } = await swalo.fire({ title: "Tulis pesan untuk tyang😁", input: "textarea", confirmButtonText: "Kirim" });
         if (pesan) {
           await swalo.fire({ title: "Kirim pesannya ke wa aku ya" });
           location.assign(`https://wa.me/${nomorWhatsapp}?text=${pesan}`);
@@ -158,5 +158,6 @@
     <script src="script.js"></script>
   </body>
 </html>
+
 
 
